@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Input from "./Input"
 
 function AddTask({ onAddTaskSubmit }) {
   const [title, setTitle] = useState("");
@@ -19,7 +20,7 @@ function AddTask({ onAddTaskSubmit }) {
         value={description}
         onChange={(event) => setDescription(event.target.value)}
       />
-      
+
       <button
         className="bg-slate-700 text-white p-2 rounded-md shadow hover:bg-slate-600"
         onClick={() => {
